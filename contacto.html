@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocco Couture</title>
+    <link rel="stylesheet" href="./static/css/styles.css">
+    <link rel="shortcut icon" href="./static/img/Logo RoccoCouture.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Rocco Couture</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="products.html">Productos Destacados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <!-- Formulario de contacto -->
+            <form id="contactForm" action="#" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required title="Ingrese su nombre">
+                    <span class="tooltip">Ingrese su nombre</span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required
+                        title="Ingrese su dirección de correo electrónico">
+                    <span class="tooltip">Ingrese su dirección de correo electrónico</span>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required title="Escriba su mensaje aquí"></textarea>
+                    <span class="tooltip">Escriba su mensaje aquí</span>
+                </div>
+                <div class="form-group">
+                    <label for="motivo">Motivo de Contacto:</label>
+                    <select id="motivo" name="motivo" required title="Seleccione el motivo de su contacto">
+                        <option value="consulta">Consulta</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="queja">Queja</option>
+                    </select>
+                    <span class="tooltip">Seleccione el motivo de su contacto</span>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="suscribir" name="suscribir">
+                    <label for="suscribir">Suscribirse al Boletín</label>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
