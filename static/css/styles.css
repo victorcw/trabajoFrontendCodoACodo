@@ -6,8 +6,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color:#FFE4C4;
+    color: black;
     padding: 20px;
 }
 
@@ -21,7 +21,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: black;
     text-decoration: none;
 }
 
@@ -139,17 +139,17 @@ footer {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Espacio entre las tarjetas */
-    width: calc(33.33% - 20px); /* Ancho de las tarjetas en pantallas grandes */
-    margin-right: 20px; /* Espacio entre las tarjetas */
-    float: left; /* Coloca las tarjetas en la misma fila */
+    margin-bottom: 20px; 
+    width: calc(33.33% - 20px);
+    margin-right: 20px; 
+    float: left; 
     transition: transform 0.3s ease;
 }
 .card:hover {
-    transform: scale(1.05); /* Cambia el tamaño de la tarjeta al hacer hover */
+    transform: scale(1.05); 
 }
 .card:nth-child(3n) {
-    margin-right: 0; /* Elimina el margen derecho de cada tercera tarjeta para evitar desbordamiento */
+    margin-right: 0; 
 }
 
 .card img {
@@ -184,7 +184,7 @@ footer {
 /* Media query para dispositivos con una anchura máxima de 768px (tabletas) */
 @media screen and (max-width: 768px) {
     .card {
-        width: calc(50% - 20px); /* Establecer el ancho al 50% menos el espacio entre las tarjetas */
+        width: calc(50% - 20px); 
     }
 }
 
@@ -193,4 +193,53 @@ footer {
     .card {
         width: 100%; /* Establecer el ancho al 100% para ocupar toda la pantalla */
     }
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    display: block;
+    min-width: 100%;
+    flex: 0 0 auto;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+nav ul li a.selected {
+    color: #ff0000; 
+    font-weight: bold;
+   
 }
