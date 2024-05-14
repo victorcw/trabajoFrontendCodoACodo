@@ -6,9 +6,12 @@ document.addEventListener("DOMContentLoaded", function() {
         var mensaje = document.getElementById("mensaje").value;
         var motivo = document.getElementById("motivo").value;
         
-        if (nombre === "" || email === "" || mensaje === "" || motivo === "") {
+        if (nombre === "" || email === "" || mensaje === "" || motivo === "" ) {
             alert("Por favor completa todos los campos obligatorios.");
             event.preventDefault();
-        }
+        } else {
+            form.submit();
+            alert("Gracias")
+            location.replace("./index.html");}
     });
 });
