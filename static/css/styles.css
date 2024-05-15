@@ -135,8 +135,8 @@ footer {
 }
 /* Estilos generales para las tarjetas */
 .card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px; 
@@ -144,6 +144,8 @@ footer {
     margin-right: 20px; 
     float: left; 
     transition: transform 0.3s ease;
+    box-sizing: border-box;
+    position: relative;
 }
 .card:hover {
     transform: scale(1.05); 
@@ -156,6 +158,8 @@ footer {
     width: 100%;
     height: auto;
     display: block;
+    
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
@@ -165,20 +169,56 @@ footer {
 
 .card-content h3 {
     margin-top: 0;
-    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
 }
 
 .card-content p {
     margin-bottom: 10px;
+    color: #666;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
 }
 
 .button {
-    background-color: #4CAF50;
-    color: white;
+    display: inline-block;
     padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el mensaje de detalles */
+.details-message {
+    display: none;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.details-message.active {
+    display: block;
+}
+
+.details-message p {
+    margin: 5px 0;
 }
 
 /* Media query para dispositivos con una anchura máxima de 768px (tabletas) */
