@@ -33,3 +33,19 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+function mostrarDetalles(event, detailsId) {
+    event.preventDefault();
+    var details = document.getElementById(detailsId);
+    if (details.classList.contains('active')) {
+        details.classList.remove('active');
+    } else {
+        // Cerrar cualquier otro mensaje de detalles abierto
+        var allDetails = document.querySelectorAll('.details-message');
+        allDetails.forEach(function(detail) {
+            detail.classList.remove('active');
+        });
+        // Mostrar el mensaje de detalles actual
+        details.classList.add('active');
+    }
+}
