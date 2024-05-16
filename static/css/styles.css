@@ -34,8 +34,8 @@ section {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #FFE4C4;
+    color: #080404;
     padding: 20px;
     text-align: center;
 }
@@ -51,6 +51,7 @@ footer {
 
 .form-group {
     margin-bottom: 20px;
+    padding-inline: 5%;
 }
 
 .form-group label {

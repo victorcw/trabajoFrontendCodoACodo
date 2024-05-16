@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
             event.preventDefault();
         } else {
             form.submit();
-            alert("Gracias")
-            location.replace("./index.html");}
+            //alert("Gracias");
+            window.open("127.0.0.1:5500/index.html", "_self");
     });
 });
