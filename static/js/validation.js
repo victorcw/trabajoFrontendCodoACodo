@@ -13,5 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
             form.submit();
             //alert("Gracias");
             window.open("127.0.0.1:5500/index.html", "_self");
+        }
     });
 });
